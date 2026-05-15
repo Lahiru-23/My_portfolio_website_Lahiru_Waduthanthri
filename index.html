@@ -61,39 +61,120 @@
 
     <!-- hero section -->
     <section id="hero">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-glow"></div>
 
-      <div class="hero-content">
-        <p class="hero-tag reveal">&#47;&#47; available for work</p>
-        <h1 class="hero-name reveal">
-          <span class="name-line">Lahiru</span>
-          <span class="name-line accent-stroke">Waduthanthri</span>
-        </h1>
-        <div class="hero-roles reveal">
-          <span class="role-chip">Full Stack Developer</span>
-          <span class="role-sep">✦</span>
-          <span class="role-chip">Software Engineer</span>
-          <span class="role-sep">✦</span>
-          <span class="role-chip">Web Designer</span>
-          <span class="role-sep">✦</span>
-          <span class="role-chip">UI/UX Designer</span>
-          <span class="role-sep">✦</span>
-          <span class="role-chip">Science Tutor</span>
-        </div>
-        <p class="hero-desc reveal">
-          I craft high-performance digital experiences — from sleek interfaces<br/>
-          to robust backend systems. Code is my craft, design is my language.
-        </p>
-        <div class="hero-cta reveal">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#contact" class="btn-ghost">Let's Talk</a>
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        <div class="hero-lines">
+          <div class="h-line"></div>
+          <div class="h-line"></div>
+          <div class="h-line"></div>
         </div>
       </div>
 
-      <div class="hero-scroll-indicator">
-        <span class="scroll-line"></span>
-        <span class="scroll-label">scroll</span>
+      <div class="hero-layout">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span>Available for work — 2025</span>
+          </div>
+
+          <h1 class="hero-name reveal">
+            <span class="name-top">Lahiru</span>
+            <span class="name-bottom">
+            <span class="outline-text">Wadu</span><span class="fill-text">thanthri</span>
+          </span>
+          </h1>
+
+          <div class="hero-role-ticker reveal">
+            <span class="ticker-label">I build</span>
+            <div class="ticker-wrap">
+              <div class="ticker-track">
+                <span>Full Stack Apps</span>
+                <span>Web Interfaces</span>
+                <span>Backend Systems</span>
+                <span>Digital Experiences</span>
+                <span>Full Stack Apps</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero-desc reveal">
+            Sri Lankan developer crafting high-performance digital products —
+            clean code meets thoughtful design.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a href="projects.html" class="btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn-ghost">Let's Talk</a>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="hstat">
+              <span class="hstat-num" data-target="30">0</span><span class="hstat-plus">+</span>
+              <span class="hstat-label">Projects</span>
+            </div>
+            <div class="hstat-divider"></div>
+            <div class="hstat">
+              <span class="hstat-num" data-target="3">0</span><span class="hstat-plus">+</span>
+              <span class="hstat-label">Years Exp</span>
+            </div>
+            <div class="hstat-divider"></div>
+            <div class="hstat">
+              <span class="hstat-num" data-target="15">0</span><span class="hstat-plus">+</span>
+              <span class="hstat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right visual card -->
+        <div class="hero-visual reveal">
+          <div class="code-card">
+            <div class="code-card-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-filename">lahiru.js</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line"><span class="c-key">const</span> <span class="c-var">developer</span> <span class="c-op">=</span> {</div>
+              <div class="code-line indent"><span class="c-prop">name</span><span class="c-op">:</span> <span class="c-str">"Lahiru W."</span>,</div>
+              <div class="code-line indent"><span class="c-prop">role</span><span class="c-op">:</span> <span class="c-str">"Full Stack Dev"</span>,</div>
+              <div class="code-line indent"><span class="c-prop">location</span><span class="c-op">:</span> <span class="c-str">"Sri Lanka 🇱🇰"</span>,</div>
+              <div class="code-line indent"><span class="c-prop">stack</span><span class="c-op">:</span> [</div>
+              <div class="code-line indent2"><span class="c-str">"React"</span>, <span class="c-str">"Node"</span>,</div>
+              <div class="code-line indent2"><span class="c-str">"Python"</span>, <span class="c-str">"MySQL"</span></div>
+              <div class="code-line indent">],</div>
+              <div class="code-line indent"><span class="c-prop">available</span><span class="c-op">:</span> <span class="c-bool">true</span></div>
+              <div class="code-line">};</div>
+              <div class="code-line spacer"></div>
+              <div class="code-line"><span class="c-fn">console</span><span class="c-op">.</span><span class="c-method">log</span>(<span class="c-str">"Let's build!"</span>);</div>
+              <div class="code-cursor">▌</div>
+            </div>
+          </div>
+          <div class="floating-badge fb-1">
+            <span>⚡</span> React
+          </div>
+          <div class="floating-badge fb-2">
+            <span>🐍</span> Python
+          </div>
+          <div class="floating-badge fb-3">
+            <span>🗄️</span> MySQL
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
       </div>
     </section>
 
