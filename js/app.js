@@ -60,16 +60,15 @@ mobileLinks.forEach(link => {
 const revealEls = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-
       const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
       const index = siblings.indexOf(entry.target);
-      entry.target.style.transitionDelay = (index * 0.08) + 's';
+      entry.target.style.transitionDelay = (index * 0.07) + 's';
       entry.target.classList.add('visible');
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 revealEls.forEach(el => revealObserver.observe(el));
 
