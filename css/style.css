@@ -152,7 +152,7 @@ body::before {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile menu */
+/*------------ Mobile menu------------ */
 .mobile-menu {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -184,9 +184,7 @@ body::before {
 }
 .mobile-menu a:hover { color: var(--accent); }
 
-/* ══════════════════════════════════
-   SHARED STYLES
-══════════════════════════════════ */
+/* ------------SHARED STYLES----------*/
 section { padding: 7rem 0; }
 
 .section-inner {
@@ -233,7 +231,7 @@ section { padding: 7rem 0; }
   color: var(--accent);
 }
 
-/* Reveal animation */
+/* ------------Reveal animation ------------*/
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -244,7 +242,7 @@ section { padding: 7rem 0; }
   transform: translateY(0);
 }
 
-/* Buttons */
+/* ------------Buttons---------------- */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -289,9 +287,7 @@ section { padding: 7rem 0; }
 
 .btn-primary.full-width { width: 100%; justify-content: center; }
 
-/* ══════════════════════════════════
-   HERO SECTION
-══════════════════════════════════ */
+/* ------------------HERO SECTION------------------ */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -302,7 +298,7 @@ section { padding: 7rem 0; }
   overflow: hidden;
 }
 
-/* Background elements */
+/*--------------Background elements---------------*/
 .hero-bg { position: absolute; inset: 0; pointer-events: none; }
 
 .hero-grid {
@@ -362,7 +358,7 @@ section { padding: 7rem 0; }
   50% { opacity: 1; transform: scaleY(1.1); }
 }
 
-/* Hero Layout */
+/*----------- Hero Layout----------- */
 .hero-layout {
   display: grid;
   grid-template-columns: 1fr 420px;
@@ -374,7 +370,7 @@ section { padding: 7rem 0; }
   width: 100%;
 }
 
-/* Hero Badge */
+/*---------Hero Badge------------ */
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -401,7 +397,7 @@ section { padding: 7rem 0; }
   50% { opacity: 0.3; box-shadow: none; }
 }
 
-/* Hero Name */
+/*-----------Hero Name-----------*/
 .hero-name {
   font-size: clamp(3.2rem, 8vw, 6.5rem);
   font-weight: 700;
@@ -425,7 +421,7 @@ section { padding: 7rem 0; }
   color: var(--accent);
 }
 
-/* Role ticker */
+/*------------Role ticker----------- */
 .hero-role-ticker {
   display: flex;
   align-items: center;
@@ -481,7 +477,7 @@ section { padding: 7rem 0; }
   margin-bottom: 3rem;
 }
 
-/* Hero stats */
+/*----------Hero stats-----------*/
 .hero-stats {
   display: flex;
   align-items: center;
@@ -528,7 +524,7 @@ section { padding: 7rem 0; }
   flex-shrink: 0;
 }
 
-/* Code Card (Hero Visual) */
+/*----------Hero Visual---------------- */
 .hero-visual {
   position: relative;
   display: flex;
@@ -597,7 +593,7 @@ section { padding: 7rem 0; }
   50% { opacity: 0; }
 }
 
-/* Floating tech badges */
+/*------------ Floating tech badges-------------- */
 .floating-badge {
   position: absolute;
   background: var(--surface2);
@@ -622,7 +618,7 @@ section { padding: 7rem 0; }
   50% { transform: translateY(-6px); }
 }
 
-/* Scroll indicator */
+/*--------Scroll indicator---------- */
 .hero-scroll {
   position: absolute;
   bottom: 2.5rem;
@@ -658,9 +654,7 @@ section { padding: 7rem 0; }
   text-transform: uppercase;
 }
 
-/* ══════════════════════════════════
-   ABOUT
-══════════════════════════════════ */
+/*---------ABOUT-------------*/
 #about { background: var(--surface); }
 
 .about-grid {
