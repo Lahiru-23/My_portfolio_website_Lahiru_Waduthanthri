@@ -11,8 +11,6 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top  = mouseY + 'px';
 });
 
-
-
 function animateRing() {
   ringX += (mouseX - ringX) * 0.12;
   ringY += (mouseY - ringY) * 0.12;
@@ -21,7 +19,6 @@ function animateRing() {
   requestAnimationFrame(animateRing);
 }
 animateRing();
-
 
 document.querySelectorAll('a, button, .project-card, .skill-card, .contact-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
