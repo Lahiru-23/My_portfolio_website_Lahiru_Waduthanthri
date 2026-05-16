@@ -38,8 +38,6 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
 });
 
-
-
 const hamburger  = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -57,7 +55,6 @@ mobileLinks.forEach(link => {
     document.body.style.overflow = '';
   });
 });
-
 
 
 const revealEls = document.querySelectorAll('.reveal');
