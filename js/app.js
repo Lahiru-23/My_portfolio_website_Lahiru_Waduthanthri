@@ -20,7 +20,7 @@ function animateRing() {
 }
 animateRing();
 
-document.querySelectorAll('a, button, .project-card, .skill-card, .contact-card').forEach(el => {
+document.querySelectorAll('a, button, .project-card, .skill-card, .assignment-card, .contact-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.classList.add('grow');
     cursorRing.classList.add('grow');
@@ -30,7 +30,6 @@ document.querySelectorAll('a, button, .project-card, .skill-card, .contact-card'
     cursorRing.classList.remove('grow');
   });
 });
-
 
 
 const navbar = document.getElementById('navbar');
