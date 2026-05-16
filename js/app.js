@@ -12,6 +12,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 
+
 function animateRing() {
   ringX += (mouseX - ringX) * 0.12;
   ringY += (mouseY - ringY) * 0.12;
