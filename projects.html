@@ -249,5 +249,44 @@
   </div>
 </section>
 
+<footer>
+  <div class="footer-inner">
+    <p class="footer-name">Lahiru Waduthanthri</p>
+    <p class="footer-copy">© <span id="year"></span> — Designed &amp; Built with LW</p>
+    <div class="footer-links">
+      <a href="https://github.com/Lahiru-23" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/lahiru-udara-21375b3a6/" target="_blank">LinkedIn</a>
+      <a href="mailto:lahiruwaduthanthri2002@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  const noResults = document.getElementById('noResults');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      let visible = 0;
+      projectCards.forEach(card => {
+        const cats = card.dataset.cat || '';
+        if (filter === 'all' || cats.includes(filter)) {
+          card.style.display = '';
+          card.style.animation = 'fadeInUp 0.4s ease forwards';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      noResults.style.display = visible === 0 ? 'flex' : 'none';
+    });
+  });
+</script>
 </body>
 </html>
